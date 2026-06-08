@@ -95,12 +95,26 @@ document.getElementById("satuanProduk").value
 
 };
 
-await fetch(API_URL,{
+const res = await fetch(API_URL,{
 method:"POST",
 body:JSON.stringify(data)
 });
 
-alert("Produk tersimpan");
+const result = await res.json();
+
+if(result.success){
+
+alert(result.message);
+
+clearForm();
+
+loadProducts();
+
+}else{
+
+alert(result.message);
+
+}
 
 clearForm();
 
