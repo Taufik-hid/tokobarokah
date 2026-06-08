@@ -1,5 +1,5 @@
 const API_URL =
-"https://script.google.com/macros/s/ISI_URL_MILIKMU/exec";
+"https://script.google.com/macros/s/AKfycbxcTRZ_KKM2WRXkUbk6MQSpYFCbARhINZOKSRCaGeZhQO9C7EuctWGgeU8klypl9LK0/exec";
 
 let products = [];
 
